@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ary-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>YouR Own</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style (2).css">
+</head>
+<body>
+<main>
+
+  <section class="hero">
+    <div class="wm" aria-hidden="true">For Raouaa</div>
+    <div class="mascot-row">
+      <svg class="mascot" viewBox="0 0 120 120" role="img" aria-label="9otta sghira">
+        <path d="M20 52 L25 14 L54 36 Z" fill="#FFF8FB" stroke="#5A2A44" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M29 40 L31 24 L43 34 Z" fill="#FFC0D8"/>
+        <path d="M100 52 L95 14 L66 36 Z" fill="#FFF8FB" stroke="#5A2A44" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M91 40 L89 24 L77 34 Z" fill="#FFC0D8"/>
+        <ellipse cx="60" cy="76" rx="46" ry="38" fill="#FFF8FB" stroke="#5A2A44" stroke-width="3.5"/>
+        <path d="M60 44 L40 33 L40 55 Z" fill="#F58FB4" stroke="#5A2A44" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M60 44 L80 33 L80 55 Z" fill="#F58FB4" stroke="#5A2A44" stroke-width="3" stroke-linejoin="round"/>
+        <circle cx="60" cy="44" r="6.5" fill="#EE5F98" stroke="#5A2A44" stroke-width="3"/>
+        <ellipse class="eye" cx="42" cy="74" rx="4.5" ry="6.5" fill="#5A2A44"/>
+        <ellipse class="eye" cx="78" cy="74" rx="4.5" ry="6.5" fill="#5A2A44"/>
+        <ellipse cx="30" cy="88" rx="8" ry="5" fill="#FFB3C9"/>
+        <ellipse cx="90" cy="88" rx="8" ry="5" fill="#FFB3C9"/>
+        <path d="M56 82 L64 82 L60 87 Z" fill="#F58FB4" stroke="#5A2A44" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M60 87 Q60 94 53 93 M60 87 Q60 94 67 93" fill="none" stroke="#5A2A44" stroke-width="3" stroke-linecap="round"/>
+        <path d="M14 80 L30 83 M14 90 L30 89 M106 80 L90 83 M106 90 L90 89" stroke="#5A2A44" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <div class="bubble" id="bubble" role="status" aria-live="polite">Miaw! 3ndek chi 7aja?</div>
+    </div>
+
+    <h1>DeRt lik chi <span class="hl">7aja sghiRa</span>.</h1>
+    <p class="cozy">mR7ba biik ✨</p>
+
+    <div class="apology sticker">
+      <p>FiRst of all, kanbghi n3tadR 3la dkchi li glt dak nhaR o kantmena t9bli l3tidaR diali 7it i can't stand huRting you</p>
+    </div>
+
+    <p>
+      Lmhm ana bghit nkhRjo chwiya mn l'oRdinaiRe o saybtlik safe space li momkin momkin la kayn games li bnisssba lia kanchof fihom Raouaa tous simplement o otheR things
+    </p>
+  </section>
+
+  <section id="game" aria-labelledby="game-h">
+    <h2 id="game-h">find the Right match</h2>
+    <p class="muted">kol caRd 3ndha double dialha.</p>
+    <div class="bar">
+      <span class="stat" id="moves" aria-live="polite">moves: 0</span>
+      <button class="btn alt" id="shuffle" type="button">SHUFFLE</button>
+    </div>
+    <div class="grid" id="grid" role="group" aria-label="Kartat"></div>
+    <p class="win sticker" id="win" hidden>Ada2 saRaha Raouaa!jamiiil</p>
+  </section>
+
+    <section id="lights" aria-labelledby="lights-h">
+    <h2 id="lights-h">Lights out</h2>
+    <p class="muted">I know you aRe a big F1 fan o kay3jbk l3adow diali fl7ayat chaRles lecleRc anchof aRe as fast as him une fois lights in khass tclicki bach y7ssbolk Reaction time dial.Howa 290ms tRy youR's</p>
+    <div class="track sticker">
+      <div class="lights" id="lightRow" aria-hidden="true">
+        <span class="light"></span><span class="light"></span><span class="light"></span><span class="light"></span><span class="light"></span>
+      </div>
+      <button class="btn go" id="goBtn" type="button">StaRt</button>
+      <p class="result" id="lightResult" role="status" aria-live="polite"></p>
+      <p class="best" id="lightBest"></p>
+    </div>
+  </section>
+
+    <section id="episode" aria-labelledby="ep-h">
+    <h2 id="ep-h">Today's episode</h2>
+    <p class="muted">New day,new episode,new subject.</p>
+    <div class="ep sticker">
+      <p class="ep-n" id="epNum">7lqa 1</p>
+      <p class="ep-t" id="epTitle" role="status" aria-live="polite">clicki 3la 3la lbouton.</p>
+      <button class="btn" id="epBtn" type="button">7lqa jdida</button>
+    </div>
+  </section>
+
+  <section id="gift" aria-labelledby="gift-h">
+    <h2 id="gift-h">Today's gift Quote</h2>
+    <p class="muted">Dghti 3liha.</p>
+    <div class="gift-wrap">
+      <button class="gift" id="giftBtn" type="button" aria-label="Fte7 l'hdiya">🎁</button>
+      <p class="gift-note sticker" id="giftNote" role="status" hidden></p>
+    </div>
+  </section>
+
+  <section id="playlist" aria-labelledby="pl-h">
+    <h2 id="pl-h">Playlist sghira</h2>
+    <p class="muted">Hado music li kayfkroni bik soit 7it we brought them up together, soit 7it kantfkrk once i hear them, ila w7da 7it i remember the day i got my love back alive knt dayrha fstory mhm.</p>
+    <ol class="tracks sticker" id="tracks"></ol>
+    <div class="actions">
+      <a class="btn alt" id="plLink" href="#" target="_blank" rel="noopener">SPOTIFY</a>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="end-h">
+    <h2 id="end-h">Hada kolchi</h2>
+    <div class="actions">
+      <button class="btn" id="hi" type="button">Goul liya ila douzti men hna</button>
+    </div>
+    <p class="small" style="margin-top:1rem">
+      "O bnissba lina ana baghik gha tfkRi: you have all the time li bghiti tatrta7i, ghatl9ayni ma3ak, o kanstnak, o kanwa3dk manghltch meak. Mabghitch ghi had skat ynessik fia, o pdp li drt tanya 7da wa7d, ssor hia a7ssan w7da. Btw, mhm — catch you soon."
+    </p>
+    <p class="small" id="sent" role="status" hidden></p>
+    <p class="builder" id="builder" hidden>
+      Moussawada ghi: 7ett NOTIFY_URL f script bach ytkhdem lbouton. 7yyed had l molahaza 9bel ma tsifet.
+    </p>
+  </section>
+
+</main>
+<footer class="sig">For Raouaa 🎀</footer>
+
+<script src="script (3).js"></script>
+</body>
+</html>
