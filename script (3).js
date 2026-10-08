@@ -2,7 +2,7 @@
 // One-tap notification. Paste your own ntfy.sh topic URL, e.g. "https://ntfy.sh/pick-a-long-random-name-123xyz"
 // Install the ntfy app on your phone and subscribe to the same topic name to receive the ping.
 var NOTIFY_URL = "https://ntfy.sh/Raouaa";
-var NOTIFY_TEXT = "Douzat men hna.";
+var NOTIFY_TEXT = "seen.";
 
 var PLAYLIST_URL = "https://open.spotify.com/playlist/13cgSIWLOyvmPyIDHEu0ko";
 var PLAYLIST = [
