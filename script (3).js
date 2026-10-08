@@ -1,7 +1,7 @@
 /* ---------- Settings: edit these ---------- */
 // One-tap notification. Paste your own ntfy.sh topic URL, e.g. "https://ntfy.sh/pick-a-long-random-name-123xyz"
 // Install the ntfy app on your phone and subscribe to the same topic name to receive the ping.
-var NOTIFY_URL = "https://ntfy.sh/stopby-vbjvvo8j1fgvq0";
+var NOTIFY_URL = "https://ntfy.sh/Raouaa";
 var NOTIFY_TEXT = "Douzat men hna.";
 
 var PLAYLIST_URL = "https://open.spotify.com/playlist/13cgSIWLOyvmPyIDHEu0ko";
@@ -108,9 +108,9 @@ bubble.addEventListener("click", cycleBubble);
     fetch(NOTIFY_URL, { method: "POST", body: NOTIFY_TEXT, headers: { "Content-Type": "text/plain" } })
       .then(function (r) {
         if (!r.ok) throw new Error("failed");
-        sent.textContent = "T-siyfet. Choukran 3la douzanek. Ma khassek ta jawab.";
+        sent.textContent = "Welcome back anytime 💕 ghatl9ay new things, everyday 3ndk new episode title o quote, check'em up. love you 💗";
         sent.hidden = false;
-        say("T-siyfet. Choukran!");
+        say("Welcome back anytime! 💕");
       })
       .catch(function () {
         btn.disabled = false;
