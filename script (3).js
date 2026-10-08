@@ -139,8 +139,8 @@ bubble.addEventListener("click", cycleBubble);
     reset();
     state = "counting";
     res.textContent = "";
-    btn.textContent = "Tsnna...";
-    say("Tsnna... tsnna...");
+    btn.textContent = "Tsnnay...";
+    say("Tsnnay... tsnnay...");
     lights.forEach(function (l, i) {
       timers.push(setTimeout(function () { l.classList.add("on"); }, 700 * (i + 1)));
     });
@@ -148,7 +148,7 @@ bubble.addEventListener("click", cycleBubble);
     timers.push(setTimeout(function () {
       allOff();
       state = "go";
-      btn.textContent = "Dghti daba!";
+      btn.textContent = " daba!";
       btn.classList.add("ready");
       t0 = performance.now();
     }, wait));
@@ -158,7 +158,7 @@ bubble.addEventListener("click", cycleBubble);
     if (state === "idle") { start(); return; }
     if (state === "counting") {
       reset();
-      res.textContent = "Bkri bzaf! Dghti 9bel ma tatTfa. 3awdi.";
+      res.textContent = "zrbti bzaf! tsnay tatTfa. 3awdi.";
       say("Bkri bzaf! Hhh.");
       return;
     }
