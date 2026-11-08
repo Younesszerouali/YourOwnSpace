@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ary-Latn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#111315">
+<title>YouR Own — For Raouaa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style (2).css">
+</head>
+<body class="yos-locked">
+<div id="yos-access-gate" role="dialog" aria-modal="true" aria-labelledby="yos-gate-title">
+ <div class="yos-gate-card">
+  <div class="yos-gate-mark">✦</div>
+  <p class="yos-gate-kicker">A PRIVATE LITTLE PLACE</p>
+  <h1 id="yos-gate-title">Your Own Space</h1>
+  <p>Enter the shared access code to open the website.</p>
+  <form id="yos-gate-form" autocomplete="off">
+   <label class="sr-only" for="yos-gate-code">Website access code</label>
+   <input id="yos-gate-code" type="password" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="••••••" required>
+   <button type="submit">UNLOCK ↗</button>
+  </form>
+  <p id="yos-gate-status" class="yos-gate-status" role="status" aria-live="polite">Six digits to enter.</p>
+ </div>
+</div>
+<main id="home">
+<nav class="new-nav" aria-label="Main navigation"><a href="#home">HOME</a><a href="#playlist">MY PLAYLIST</a><a href="#private-space">PRIVATE SPACE</a><a href="#gallery">GALLERY</a><a href="#private-cloud">SHARED NOTES</a><a href="#game-session">GAME SESSION</a></nav>
+
+<section class="hero">
+ <div class="wm" aria-hidden="true">For Raouaa</div><div class="hero-kicker">A SMALL PLACE ON THE INTERNET · MADE WITH CARE</div>
+ <div class="mascot-row">
+  <svg class="mascot" viewBox="0 0 120 120" role="img" aria-label="9otta sghira">
+   <path d="M20 52 25 14 54 36Z M100 52 95 14 66 36Z" fill="#eeeae2" stroke="#25292a" stroke-width="3.5" stroke-linejoin="round"/>
+   <path d="M29 40 31 24 43 34Z M91 40 89 24 77 34Z" fill="#b99b70"/>
+   <ellipse cx="60" cy="76" rx="46" ry="38" fill="#eeeae2" stroke="#25292a" stroke-width="3.5"/>
+   <path d="M60 44 40 33 40 55Z M60 44 80 33 80 55Z" fill="#b99b70" stroke="#25292a" stroke-width="3"/>
+   <circle cx="60" cy="44" r="6.5" fill="#b99b70" stroke="#25292a" stroke-width="3"/>
+   <ellipse class="eye" cx="42" cy="74" rx="4.5" ry="6.5" fill="#25292a"/><ellipse class="eye" cx="78" cy="74" rx="4.5" ry="6.5" fill="#25292a"/>
+   <ellipse cx="30" cy="88" rx="8" ry="5" fill="#d7bfb0"/><ellipse cx="90" cy="88" rx="8" ry="5" fill="#d7bfb0"/>
+   <path d="M56 82 64 82 60 87Z M60 87Q60 94 53 93M60 87Q60 94 67 93" fill="none" stroke="#25292a" stroke-width="2.5" stroke-linecap="round"/>
+   <path d="M14 80 30 83M14 90 30 89M106 80 90 83M106 90 90 89" stroke="#25292a" stroke-width="2.5" stroke-linecap="round"/>
+  </svg><div class="bubble" id="bubble" role="status" aria-live="polite">Miaw! 3ndek chi 7aja?</div>
+ </div>
+ <h1>DeRt lik chi <span class="hl">7aja sghiRa</span>.</h1><p class="cozy">mR7ba biik ✨</p>
+<p>Lmhm ana bghit nkhRjo chwiya mn l'oRdinaiRe o saybtlik safe space li momkin momkin la kayn games li bnisssba lia kanchof fihom Raouaa tous simplement o otheR things</p>
+</section>
+<section id="game" aria-labelledby="game-h"><div class="section-kicker">01 · A LITTLE GAME</div><h2 id="game-h">find the Right match</h2><p class="muted">kol caRd 3ndha double dialha.</p>
+ <div class="bar"><span class="stat" id="moves" aria-live="polite">moves: 0</span><button class="btn alt" id="shuffle" type="button">SHUFFLE</button></div>
+ <div class="grid" id="grid" role="group" aria-label="Kartat"></div><p class="win sticker" id="win" hidden>Ada2 saRaha Raouaa!jamiiil</p>
+</section>
+<section id="lights" aria-labelledby="lights-h"><div class="section-kicker">02 · REACTION TEST</div><h2 id="lights-h">Lights out</h2>
+ <p class="muted">I know you aRe a big F1 fan o kay3jbk l3adow diali fl7ayat chaRles lecleRc anchof aRe as fast as him une fois lights in khass tclicki bach y7ssbolk Reaction time dial.Howa 290ms tRy youR's</p>
+ <div class="track sticker"><div class="lights" id="lightRow" aria-hidden="true"><span class="light"></span><span class="light"></span><span class="light"></span><span class="light"></span><span class="light"></span></div>
+ <button class="btn go" id="goBtn" type="button">StaRt</button><p class="result" id="lightResult" role="status" aria-live="polite"></p><p class="best" id="lightBest"></p></div>
+</section>
+<section id="episode" aria-labelledby="ep-h"><div class="section-kicker">03 · DAILY PICK</div><h2 id="ep-h">Today's episode</h2><p class="muted">New day,new episode,new subject.</p>
+ <div class="ep sticker"><p class="ep-n" id="epNum">7lqa 1</p><p class="ep-t" id="epTitle" role="status" aria-live="polite">clicki 3la 3la lbouton.</p><button class="btn" id="epBtn" type="button">7lqa jdida</button></div>
+</section>
+<section id="gift" aria-labelledby="gift-h"><div class="section-kicker">04 · A SMALL NOTE</div><h2 id="gift-h">Today's gift Quote</h2><p class="muted">Dghti 3liha.</p>
+ <div class="gift-wrap"><button class="gift" id="giftBtn" type="button" aria-label="Fte7 l'hdiya">🎁</button><p class="gift-note sticker" id="giftNote" role="status" hidden></p></div>
+</section>
+<section id="playlist" aria-labelledby="pl-h"><div class="section-kicker">05 · OUR SOUNDTRACK</div><h2 id="pl-h">My Playlist</h2>
+ <p class="muted">A playlist for sharing our favourite songs — the ones connected to us and the ones we simply love.</p>
+ <div class="shared-playlist sticker">
+  <div class="player-panel" aria-label="Music player">
+   <div class="player-art" aria-hidden="true">♫</div>
+   <div class="player-meta"><span class="player-eyebrow">NOW PLAYING</span><strong id="now-title">Choose a song</strong><span id="now-artist">Your shared soundtrack</span></div>
+   <button class="player-main" id="player-toggle" type="button" aria-label="Play">▶</button>
+   <div class="player-progress"><span id="current-time">0:00</span><input id="seek-bar" type="range" min="0" max="1000" value="0" aria-label="Seek through song"><span id="duration">0:00</span></div>
+   <div class="player-controls"><button type="button" id="previous-track" aria-label="Previous song">⏮</button><button type="button" id="next-track" aria-label="Next song">⏭</button><label class="volume-control">VOL <input id="volume-control" type="range" min="0" max="1" step="0.01" value="0.85" aria-label="Volume"></label></div>
+   <audio id="playlist-audio" preload="metadata"></audio>
+  </div>
+  <ol class="tracks" id="tracks" aria-label="Songs"></ol>
+  <form id="shared-track-form" class="track-form"><label for="local-track">Add an audio file from this device</label><input id="local-track" type="file" accept="audio/mpeg,audio/mp3,audio/wav,audio/mp4,audio/aac,audio/ogg,audio/*"><button class="btn" type="submit">ADD SONG +</button></form>
+  <p id="playlist-status" class="small" role="status">Nine songs to start with. Add another one whenever you feel like it.</p>
+ </div>
+</section>
+<section id="private-space" class="new-feature"><div class="section-kicker">06 · JUST YOURS</div><h2>Private Space</h2><p class="muted">Create a private space with a personal code, or unlock one you already made. Notes and photos, just for you.</p><div class="private-panel sticker"><form id="private-form"><label for="space-code">Your private code</label><input id="space-code" type="password" minlength="6" autocomplete="off" placeholder="Choose a code (at least 6 characters)" required><button class="btn" type="submit">CREATE / UNLOCK MY SPACE</button></form><p class="small" id="private-status" role="status">Your private notes are protected by your own code.</p><div id="private-content" hidden><div class="private-tabs"><button type="button" data-private-tab="notes">NOTES</button><button type="button" data-private-tab="gallery">GALLERY</button><button type="button" id="private-lock">LOCK SPACE</button></div><div id="private-notes"><label for="private-note">Your private note</label><textarea id="private-note" rows="5" placeholder="Write something only you should read..."></textarea><button class="btn" id="save-note" type="button">SAVE NOTE</button><p id="note-status" class="small"></p></div><div id="private-gallery" hidden><label for="private-photo">Add a photo to this private gallery</label><input id="private-photo" type="file" accept="image/*"><div id="private-photo-list" class="private-photo-list"></div></div></div></div></section>
+
+<section id="private-cloud" class="new-feature" aria-labelledby="private-cloud-heading">
+ <div class="section-kicker">07 · A LITTLE SOMETHING</div><h2 id="private-cloud-heading">A little note</h2>
+ <p class="muted">Keep a note for yourself, or let us both read it.</p>
+ <div class="gs-panel">
+  <form id="gs-private-create" class="gs-private-form">
+   <label for="gs-private-title">Title</label><input id="gs-private-title" maxlength="80" placeholder="A little note" required>
+   <label for="gs-private-content">Your note</label><textarea id="gs-private-content" rows="4" maxlength="8000" placeholder="Write something…" required></textarea>
+   <label class="gs-share-toggle"><input id="gs-private-share" type="checkbox"> Share this with both of us</label>
+   <button class="btn" type="submit">SAVE NOTE</button>
+  </form>
+  <p class="gs-status" id="gs-private-status" role="status" aria-live="polite">Enter our Game Session code to save a note.</p>
+  <div id="gs-private-items" class="gs-private-items"></div>
+ </div>
+</section>
+
+<section id="gallery" class="new-feature"><div class="section-kicker">07 · MEMORIES</div><h2>Gallery</h2><p class="muted">Your favourite moments live inside your personal Private Space. Unlock it first to open your private gallery.</p><a class="btn alt" href="#private-space">OPEN PRIVATE GALLERY ↗</a></section>
+
+
+<section id="game-session" aria-labelledby="gs-heading" class="gs-section">
+ <div class="section-kicker">08 · JUST THE TWO OF YOU</div>
+ <h2 id="gs-heading">Game Session</h2>
+ <p class="muted">Eight games. Nineteen questions each. Let's see what we both say.</p>
+ <div class="gs-panel">
+  <div id="gs-config-warning" class="gs-notice" hidden></div>
+  <div id="gs-code-entry">
+   <form id="gs-code-form" class="gs-code-card">
+    <label for="gs-session-code">Our shared code · 000000</label>
+    <div class="gs-code-line"><input id="gs-session-code" type="password" inputmode="numeric" maxlength="6" pattern="[0-9]{6}" placeholder="••••••" autocomplete="off" required><button class="btn" type="submit">LET'S PLAY ↗</button></div>
+    <div class="gs-player-select" aria-label="Who's playing?">
+     <span>Who's playing?</span>
+     <button type="button" class="selected" data-player-choice="Youness" aria-pressed="true">Youness</button>
+     <button type="button" data-player-choice="Raouaa" aria-pressed="false">Raouaa</button>
+    </div>
+   </form>
+   <p id="gs-auth-status" class="gs-status" role="status" aria-live="polite"></p>
+  </div>
+  <div id="gs-dashboard" hidden>
+   <div class="gs-session-head"><div><span class="gs-live-dot"></span><strong id="gs-session-label">OUR GAME SESSION</strong><p id="gs-session-description">Ready when we are.</p></div><button id="gs-leave-session" type="button" class="gs-small-btn">LOCK</button></div>
+   <div id="gs-game-library" class="gs-game-grid"></div>
+   <div id="gs-quiz-panel" class="gs-quiz-panel" hidden>
+    <div class="gs-quiz-head"><button id="gs-back-games" type="button" class="gs-small-btn">← ALL GAMES</button><span id="gs-question-count"></span></div>
+    <h3 id="gs-game-title"></h3>
+    <div class="gs-progress"><span id="gs-progress-bar"></span></div>
+    <p id="gs-question-text" class="gs-question"></p>
+    <div id="gs-song-clue" class="gs-song-clue" hidden></div>
+    <form id="gs-answer-form"><div id="gs-answer-options" class="gs-answer-options"></div><label id="gs-text-answer-wrap" class="gs-text-wrap" hidden for="gs-text-answer">Your answer</label><textarea id="gs-text-answer" rows="3" maxlength="500" placeholder="Name the song…" hidden></textarea>
+     <div class="gs-quiz-actions"><button id="gs-prev-question" class="gs-small-btn" type="button">← PREVIOUS</button><button class="btn" type="submit">SAVE ANSWER</button><button id="gs-next-question" class="gs-small-btn" type="button">NEXT →</button></div>
+    </form>
+    <p id="gs-save-status" class="gs-status" role="status" aria-live="polite"></p>
+    <section class="gs-answers-section"><h4>Our answers</h4><div id="gs-answer-comparison" class="gs-answer-comparison"><p>Choose a game to see our answers.</p></div></section>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="closing" aria-labelledby="end-h"><div class="section-kicker">06 · BEFORE YOU GO</div><h2 id="end-h">Hada kolchi</h2><div class="actions"><button class="btn" id="hi" type="button">click here if you loved it&lt;3</button></div>
+<p class="small" id="sent" role="status" hidden></p><p class="builder" id="builder" hidden>Moussawada ghi: 7ett NOTIFY_URL f script bach ytkhdem lbouton. 7yyed had l molahaza 9bel ma tsifet.</p>
+</section>
+</main><footer class="sig">For Raouaa 🎀</footer>
+<script src="script (3).js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="site-access.js"></script>
+<script src="game-session.js"></script>
+</body></html>
